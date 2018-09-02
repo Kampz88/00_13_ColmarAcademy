@@ -1,0 +1,33 @@
+/*Standard (Desktop)*/
+
+  html{
+    font-size: 12px;
+  }
+
+  /* Font-Faces */
+
+  /*Body*/
+
+    /*Header*/
+
+    /*Main*/
+
+      /*Banner Section*/
+
+      /*About Section*/
+
+      /*Courses Section*/
+
+      /*Thesis Section*/
+
+    /*Footer*/
+
+/*Mobile*/
+
+@media only screen and (max-width: 768px) {
+
+  html{
+    font-size: 10px;
+  }
+
+}
