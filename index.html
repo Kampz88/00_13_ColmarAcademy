@@ -24,7 +24,7 @@
     <!--Header-->
     <header>
 
-      <div class="logo">
+      <div class="logo upper">
         <img src="./resources/images/ic-logo.svg"/>
         <span class="bold">Colmar</span><span>Academy</span>
       </div>
@@ -48,21 +48,16 @@
 
       <div id="banner">
 
-        <div class="image">
+        <div class="left">
           <img src="./resources/images/banner.jpg"/>
         </div>
 
-        <div class="start">
-
-          <div class="text">
-            <h1>Learn something new everyday</h1>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-          </div>
-
-          <div class="button">
-            <a href="#">Start here</a>
-          </div>
-
+        <div class="right">
+          <h1>Learn something new everyday</h1>
+          <br></br>
+          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+          <br></br>
+          <a class="button" href="#">Start here</a>
         </div>
 
       </div>
@@ -71,21 +66,18 @@
 
       <div id="about">
 
-        <div class="quote" role="complementary">
-          <div class="image">
-            <img src="./resources/images/information-main.jpg"/>
-          </div>
-          <div class="text">
-            <h2>It doesn't hurt to keep practicing</h2>
-            <p>"Curabitur vitae libero in ipsum porttitor consequat.
+        <div class="left" role="complementary">
+          <img src="./resources/images/information-main.jpg"/>
+          <h2>It doesn't hurt to keep practicing</h2>
+          <p>"Curabitur vitae libero in ipsum porttitor consequat.
               Aliquam et commodo lectus, nec consequat neque.
               Sed non accumsan urna. Phasellus sed consequat ex.
               Etiam eget magna laoreet, efficitur dolot consequat, tristique ligula."</p>
-            <p class="bold">Emanuel, Sr. Strategist at Hiring.com</p>
-          </div>
+          <br></br>
+          <p class="bold">Emanuel, Sr. Strategist at Hiring.com</p>
         </div>
 
-        <div class="info" role="presentation">
+        <div class="right" role="presentation">
 
           <div class="info-section">
             <div class="image">
@@ -99,9 +91,8 @@
           </div>
 
           <div class="info-section">
-            <div class="info-section">
-              <div class="image">
-                <img src="./resources/images/information-campus.jpg"/>
+            <div class="image">
+              <img src="./resources/images/information-campus.jpg"/>
               </div>
             <div class="text">
               <h3>Our campus</h3>
@@ -151,13 +142,13 @@
             <div class="text">
               <h3>Computer art</h3>
               <p class="upper">Courses<p>
-              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation.<p>
+              <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation<p>
             </div>
           </div>
 
           <div class="course-block">
             <div class="image">
-              <img src="./resources/images/design.jpg"/>
+              <img src="./resources/images/course-design.jpg"/>
             </div>
             <div class="text">
               <h3>Design</h3>
@@ -207,26 +198,24 @@
 
       <div id="thesis">
 
-        <div class="thesis-present">
+        <h2>Thesis exhibit</h2>
 
-          <div class="thesis-video" role="complementary">
-            <div class="video">
-              <img src="./resources/images/information-main.jpg"/>
-            </div>
-            <div class="text">
-              <h3>Reimagine urban</h2>
-              <p>"Curabitur vitae libero in ipsum porttitor consequat.
+        <div class="thesis-content">
+
+          <div class="left" role="complementary">
+            <video src="./resources/videos/thesis.mp4" controls/>Video not supported</video>
+            <h3>Reimagine urban</h2>
+            <p>"Curabitur vitae libero in ipsum porttitor consequat.
                 Aliquam et commodo lectus, nec consequat neque.
                 Sed non accumsan urna. Phasellus sed consequat ex.
                 Etiam eget magna laoreet, efficitur dolot consequat, tristique ligula."</p>
-            </div>
           </div>
 
-          <div class="thesis-list">
+          <div class="right" role="presentation">
 
             <div class="thesis-section">
               <div class="image">
-                <video src="./resources/videos/thesis.mp4" controls/>Video not supported</video>
+                <img src="./resources/images/thesis-fisma.jpg"/>
               </div>
               <div class="text">
                 <h3>Fisma: Design and Prototype</h3>
@@ -246,6 +235,8 @@
 
           </div>
 
+        </div>
+
       </div>
 
     </main>
@@ -255,15 +246,15 @@
     <footer>
 
       <div class="copyright">
-        <span> 2016 Colmar Academy. All rights reserved</span>
+        <span>&#169; 2016 Colmar Academy. All rights reserved</span>
       </div>
 
-      <div class="links">
+      <nav>
         <ul role="presentation">
           <li><a href="#">Terms</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>
-      </div>
+      </nav>
 
     </footer>
 

@@ -1,33 +1,423 @@
 /*Standard (Desktop)*/
 
   html{
-    font-size: 12px;
+    font-size: 16px;
   }
 
   /* Font-Faces */
 
   /*Body*/
 
+  h1{
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 800;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 600;
+  }
+
+  h3{
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+
+  p{
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 400;
+  }
+
+  a{
+    font-size: 1rem;
+    line-height: 1.3;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .upper{
+    text-transform: uppercase;
+  }
+
     /*Header*/
+
+    header{
+      display: flex;
+      align-items: center;
+      position: fixed;
+      z-index: 5;
+      height: 4rem;
+      width: 100%;
+      background-color: white;
+    }
+
+    header .logo{
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-start;
+      height: 2rem;
+      padding: 0 1.5rem;
+    }
+
+    header .logo span{
+      font-size: 1.25rem;
+    }
+
+    header nav{
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 1.5rem;
+    }
+
+    header nav ul{
+      display: flex;
+      align-items: center;
+    }
+
+    header nav ul li{
+      display: block;
+      padding-right: 1rem;
+    }
+
+    header nav ul li:last-child{
+      padding-right: 0;
+    }
 
     /*Main*/
 
       /*Banner Section*/
 
+      #banner{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        top: 4rem;
+        width: 100%;
+        background-color: lightgrey;
+      }
+
+      #banner .left{
+        display: block;
+        overflow: hidden;
+        width: 60%;
+        padding: 2rem 1.5rem;
+      }
+
+      #banner .left img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #banner .right{
+        display: block;
+        padding-right: 1.5rem;
+        width: 40%;
+      }
+
+      #banner .right .button{
+        display: block;
+        text-align: center;
+        width: 75%;
+        background-color: grey;
+        color: white;
+        padding: 0.5rem 0rem;
+      }
+
       /*About Section*/
+
+      #about{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        top: 4rem;
+        width: 100%;
+      }
+
+      #about .left{
+        display: block;
+        overflow: hidden;
+        width: 60%;
+        padding: 2rem 1.5rem;
+      }
+
+      #about .left img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #about .left h2{
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+      }
+
+      #about .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 40%;
+        padding: 2rem 1.5rem 2rem 0rem;
+      }
+
+      #about .right .info-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+
+      #about .right .info-section .image{
+        width: 35%;
+        padding: 1rem 1rem;
+      }
+
+      #about .right .info-section .image:first-child{
+        padding-top: 0rem;
+      }
+
+      #about .right .info-section .image img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #about .right .info-section .text{
+        width: 65%;
+      }
+
+      #about .right .info-section .text p{
+        margin: 0.5rem 0rem;
+      }
 
       /*Courses Section*/
 
+      #courses{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 4rem;
+        width: 100%;
+        background-color: lightgray;
+      }
+
+      #courses h2{
+        text-align: center;
+        margin: 2rem 0;
+      }
+
+      #courses .course-list{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        justify-content: center;
+        max-width: 100%;
+        padding: 0 3.5rem 2rem 3.5rem;
+      }
+
+      #courses .course-list .course-block{
+        width: 25%;
+        margin: 0 1rem 2rem 1rem;
+        background-color: white;
+      }
+
+      #courses .course-list .course-block .image{
+        width: 100%;
+      }
+
+      #courses .course-list .course-block .image img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #courses .course-list .course-block .text{
+        padding-left: 1rem;
+      }
+
+      #courses .course-list .course-block .text h3{
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      #courses .course-list .course-block .text p{
+        margin-bottom: 0.5rem;
+      }
+
+      #courses .course-list .course-block .text p:last-child{
+        margin-bottom: 1.5rem;
+      }
+
       /*Thesis Section*/
 
+      #thesis{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: 4rem;
+        width: 100%;
+      }
+
+      #thesis h2{
+        text-align: center;
+        margin-top: 2rem;
+      }
+
+      #thesis .thesis-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+      }
+
+      #thesis .thesis-content .left{
+        display: block;
+        overflow: hidden;
+        width: 60%;
+        padding: 2rem 1.5rem;
+      }
+
+      #thesis .thesis-content .left video{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #thesis .thesis-content .left h3{
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      #thesis .thesis-content .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 40%;
+        padding: 2rem 1.5rem 2rem 0rem;
+      }
+
+      #thesis .thesis-content .right .thesis-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+
+      #thesis .thesis-content .right .thesis-section .image{
+        width: 35%;
+        padding: 1rem 1rem;
+      }
+
+      #thesis .thesis-content .right .thesis-section .image:first-child{
+        padding-top: 0rem;
+      }
+
+      #thesis .thesis-content .right .thesis-section .image img{
+        display: block;
+        height: auto;
+        max-width: 100%;
+      }
+
+      #thesis .thesis-content .right .thesis-section .text{
+        width: 65%;
+      }
+
+      #thesis .thesis-content .right .thesis-section .text p{
+        margin: 0.5rem 0rem;
+      }
+
     /*Footer*/
+
+    footer{
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 4rem;
+      width: 100%;
+    }
+
+    footer .copyright{
+      display: flex;
+      flex-grow: 1;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem 1.5rem;
+    }
+
+    footer .copyright span{
+      font-size: 1rem;
+    }
+
+    footer nav{
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 1.5rem;
+    }
+
+    footer nav ul{
+      display: flex;
+      align-items: center;
+    }
+
+    footer nav ul li{
+      display: block;
+      padding-right: 1rem;
+    }
+
+    footer nav ul li:last-child{
+      padding-right: 0;
+    }
+
+/*Transition to Mobile - Font-Size*/
+
+@media only screen and (max-width: 1200px) {
+
+  html{
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+  html{
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+
+  html{
+    font-size: 13px;
+  }
+
+}
+
 
 /*Mobile*/
 
 @media only screen and (max-width: 768px) {
 
   html{
-    font-size: 10px;
+    font-size: 12px;
   }
 
 }
