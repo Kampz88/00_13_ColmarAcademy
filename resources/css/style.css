@@ -62,7 +62,7 @@
 
   h3{
     font-size: 1.5rem;
-    line-height: 1.4;
+    line-height: 1.2;
     font-family: "josefin slab", helvetica, serif;
     font-weight: 700;
   }
@@ -185,10 +185,12 @@
 
       #banner .right h1{
         color: var(--highlight);
+        margin-bottom: 2rem;
       }
 
       #banner .right h3{
         color: var(--lightest);
+        margin-bottom: 1.5rem;
       }
 
       #banner .right .button{
@@ -247,7 +249,7 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 40%;
-        padding: 2rem 1.5rem 2rem 0rem;
+        padding: 1rem 1.5rem 2rem 0rem;
       }
 
       #about .right .info-section{
@@ -264,7 +266,7 @@
       }
 
       #about .right .info-section:first-child .image{
-        padding-top: 0rem;
+        padding-top: 1rem;
       }
 
       #about .right .info-section .image img{
@@ -275,6 +277,7 @@
 
       #about .right .info-section .text{
         width: 65%;
+        padding-right: 1rem;
       }
 
       #about .right .info-section .text h3{
@@ -288,10 +291,12 @@
 
       #about .right .info-section .text a{
         color: var(--dark);
+        font-style: italic;
       }
 
       #about .right .info-section .text a:hover{
         text-transform: uppercase;
+        font-style: normal;
       }
 
       #about .right .info-section:last-child{
@@ -361,6 +366,7 @@
 
       #courses .course-list .course-block .text{
         padding-left: 1rem;
+        padding-right: 1rem;
       }
 
       #courses .course-list .course-block .text h3{
@@ -446,6 +452,10 @@
         align-items: center;
         width: 100%;
         transition: all, 2s, ease-in-out, 1s;
+      }
+
+      #thesis .thesis-content .right .thesis-section .text{
+        padding-right: 1rem;
       }
 
       #thesis .thesis-content .right .thesis-section:hover{
