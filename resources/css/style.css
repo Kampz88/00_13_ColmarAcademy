@@ -4,43 +4,86 @@
     font-size: 16px;
   }
 
-  /* Font-Faces */
+  /*Color Functions*/
 
-  /*Body*/
+  :root {
+    --darkest: rgba(94, 86, 86, 1);
+    --dark: rgba(73, 101, 123, 1);
+    --medium: rgba(118, 180, 189, 1);
+    --light: rgba(189, 234, 238, 1);
+    --lightest: rgba(235, 244, 246, 1);
+    --highlight: rgba(255, 239, 215, 1);
+  }
+
+  /*Body FontFaces*/
+
+  header span{
+    font-size: 1rem;
+    font-family: "multi", helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    text-decoration: none;
+  }
+
+  header a, footer a, footer span{
+    font-size: 1rem;
+    font-family: "muli", helvetica, sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+  }
 
   h1{
-    font-size: 2rem;
-    line-height: 1.4;
-    font-weight: 800;
+    font-size: 2.75rem;
+    line-height: 1.2;
+    font-family: "josefin slab", helvetica, serif;
+    font-weight: 700;
   }
 
   h2{
+    font-size: 2.5rem;
+    line-height: 1.3;
+    font-family: "josefin slab", helvetica, serif;
+    font-weight: 700;
+  }
+
+  #banner h3{
     font-size: 1.5rem;
-    line-height: 1.4;
-    font-weight: 600;
+    line-height: 1.3;
+    font-family: "muli", helvetica, sans-serif;
+    font-weight: 400;
+  }
+
+  #banner a{
+    font-size: 1.3rem;
+    line-height: 1.3;
+    font-family: "muli", helvetica, sans-serif;
+    font-weight: 400;
   }
 
   h3{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     line-height: 1.4;
-    font-weight: 500;
+    font-family: "josefin slab", helvetica, serif;
+    font-weight: 700;
   }
 
   p{
     font-size: 1rem;
     line-height: 1.3;
+    font-family: "muli", helvetica, sans-serif;
     font-weight: 400;
   }
 
   a{
     font-size: 1rem;
     line-height: 1.3;
-    font-weight: 400;
+    font-family: "muli", helvetica, sans-serif;
+    font-weight: 300;
     text-decoration: none;
   }
 
   .bold{
-    font-weight: bold;
+    font-weight: 700;
   }
 
   .upper{
@@ -54,9 +97,10 @@
       align-items: center;
       position: fixed;
       z-index: 5;
-      height: 4rem;
+      height: 3.95rem;
+      border-bottom: 0.05rem solid var(--lightest);
       width: 100%;
-      background-color: white;
+      background-color: var(--dark);
     }
 
     header .logo{
@@ -68,8 +112,13 @@
       padding: 0 1.5rem;
     }
 
+    header .logo img{
+      height: 2rem;
+    }
+
     header .logo span{
-      font-size: 1.25rem;
+      padding-left: 0.5rem;
+      color: var(--lightest);
     }
 
     header nav{
@@ -88,6 +137,14 @@
       padding-right: 1rem;
     }
 
+    header a{
+      color: var(--lightest);
+    }
+
+    header nav ul li:hover{
+      text-transform: uppercase;
+    }
+
     header nav ul li:last-child{
       padding-right: 0;
     }
@@ -103,7 +160,7 @@
         position: relative;
         top: 4rem;
         width: 100%;
-        background-color: lightgrey;
+        background-color: var(--medium);
       }
 
       #banner .left{
@@ -122,16 +179,32 @@
       #banner .right{
         display: block;
         padding-right: 1.5rem;
-        width: 40%;
+        margin-left: 2.5%;
+        width: 37.5%;
+      }
+
+      #banner .right h1{
+        color: var(--highlight);
+      }
+
+      #banner .right h3{
+        color: var(--lightest);
       }
 
       #banner .right .button{
         display: block;
         text-align: center;
         width: 75%;
-        background-color: grey;
         color: white;
         padding: 0.5rem 0rem;
+        background-color: var(--dark);
+        color: var(--lightest);
+        transition: all, 2s, ease-in-out, 1s;
+      }
+
+      #banner .right .button:hover{
+        background-color: var(--highlight);
+        color: var(--dark);
       }
 
       /*About Section*/
@@ -143,6 +216,11 @@
         position: relative;
         top: 4rem;
         width: 100%;
+        background-color: var(--lightest);
+      }
+
+      #about p{
+        color: var(--dark);
       }
 
       #about .left{
@@ -161,6 +239,7 @@
       #about .left h2{
         margin-top: 2rem;
         margin-bottom: 1.5rem;
+        color: var(--medium);
       }
 
       #about .right{
@@ -184,7 +263,7 @@
         padding: 1rem 1rem;
       }
 
-      #about .right .info-section .image:first-child{
+      #about .right .info-section:first-child .image{
         padding-top: 0rem;
       }
 
@@ -198,8 +277,37 @@
         width: 65%;
       }
 
+      #about .right .info-section .text h3{
+        color: var(--medium);
+      }
+
       #about .right .info-section .text p{
         margin: 0.5rem 0rem;
+        color: var(--dark);
+      }
+
+      #about .right .info-section .text a{
+        color: var(--dark);
+      }
+
+      #about .right .info-section .text a:hover{
+        text-transform: uppercase;
+      }
+
+      #about .right .info-section:last-child{
+        background-color: var(--medium);
+      }
+
+      #about .right .info-section:last-child h3{
+        color: var(--highlight);
+      }
+
+      #about .right .info-section:last-child p{
+        color: var(--lightest);
+      }
+
+      #about .right .info-section:last-child a{
+        color: var(--lightest);
       }
 
       /*Courses Section*/
@@ -212,12 +320,13 @@
         position: relative;
         top: 4rem;
         width: 100%;
-        background-color: lightgray;
+        background-color: var(--medium);
       }
 
       #courses h2{
         text-align: center;
         margin: 2rem 0;
+        color: var(--lightest);
       }
 
       #courses .course-list{
@@ -232,7 +341,12 @@
       #courses .course-list .course-block{
         width: 25%;
         margin: 0 1rem 2rem 1rem;
-        background-color: white;
+        background-color: var(--lightest);
+        transition: background-color, 2s, ease-in-out, 0.5s;
+      }
+
+      #courses .course-list .course-block:hover{
+        background-color: var(--highlight);
       }
 
       #courses .course-list .course-block .image{
@@ -252,10 +366,16 @@
       #courses .course-list .course-block .text h3{
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+        color: var(--dark);
+      }
+
+      #courses .course-list .course-block .text .upper{
+        color: var(--medium);
       }
 
       #courses .course-list .course-block .text p{
         margin-bottom: 0.5rem;
+        color: var(--dark);
       }
 
       #courses .course-list .course-block .text p:last-child{
@@ -272,11 +392,13 @@
         position: relative;
         top: 4rem;
         width: 100%;
+        background-color: var(--lightest);
       }
 
       #thesis h2{
         text-align: center;
         margin-top: 2rem;
+        color: var(--medium);
       }
 
       #thesis .thesis-content{
@@ -302,6 +424,11 @@
       #thesis .thesis-content .left h3{
         margin-top: 1.5rem;
         margin-bottom: 0.5rem;
+        color: var(--medium);
+      }
+
+      #thesis .thesis-content .left p{
+        color: var(--dark);
       }
 
       #thesis .thesis-content .right{
@@ -309,7 +436,7 @@
         flex-direction: column;
         justify-content: flex-start;
         width: 40%;
-        padding: 2rem 1.5rem 2rem 0rem;
+        padding: 1rem 1.5rem 2rem 0rem;
       }
 
       #thesis .thesis-content .right .thesis-section{
@@ -318,15 +445,24 @@
         justify-content: flex-start;
         align-items: center;
         width: 100%;
+        transition: all, 2s, ease-in-out, 1s;
+      }
+
+      #thesis .thesis-content .right .thesis-section:hover{
+        background-color: var(--medium);
+      }
+
+      #thesis .thesis-content .right .thesis-section:hover .text h3{
+        color: var(--highlight);
+      }
+
+      #thesis .thesis-content .right .thesis-section:hover .text p{
+        color: var(--lightest);
       }
 
       #thesis .thesis-content .right .thesis-section .image{
         width: 35%;
         padding: 1rem 1rem;
-      }
-
-      #thesis .thesis-content .right .thesis-section .image:first-child{
-        padding-top: 0rem;
       }
 
       #thesis .thesis-content .right .thesis-section .image img{
@@ -337,10 +473,16 @@
 
       #thesis .thesis-content .right .thesis-section .text{
         width: 65%;
+        transition: all, 2s, ease-in-out, 1s;
+      }
+
+      #thesis .thesis-content .right .thesis-section .text h3{
+        color: var(--medium);
       }
 
       #thesis .thesis-content .right .thesis-section .text p{
         margin: 0.5rem 0rem;
+        color: var(--dark);
       }
 
     /*Footer*/
@@ -351,6 +493,7 @@
       position: relative;
       top: 4rem;
       width: 100%;
+      background-color: var(--darkest);
     }
 
     footer .copyright{
@@ -359,10 +502,7 @@
       align-items: center;
       justify-content: flex-start;
       padding: 1rem 1.5rem;
-    }
-
-    footer .copyright span{
-      font-size: 1rem;
+      color: var(--lightest);
     }
 
     footer nav{
@@ -379,6 +519,14 @@
     footer nav ul li{
       display: block;
       padding-right: 1rem;
+    }
+
+    footer nav ul li:hover{
+      text-transform: uppercase;
+    }
+
+    footer nav ul li a{
+      color: var(--lightest);
     }
 
     footer nav ul li:last-child{
