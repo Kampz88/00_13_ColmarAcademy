@@ -172,6 +172,10 @@
       text-transform: uppercase;
     }
 
+    header nav ul li a:active{
+      color: var(--highlight);
+    }
+
     header nav ul li:last-child{
       padding-right: 0;
     }
@@ -992,6 +996,10 @@
 
     footer nav ul li:hover{
       text-transform: uppercase;
+    }
+
+    footer nav ul li a:active{
+      color: var(--highlight);
     }
 
     footer nav ul li a{
