@@ -670,6 +670,14 @@
           display:none
       }
 
+      @media only screen and (max-width: 768px){
+
+        #courses .course-list .course-block{
+          width: 40%;
+        }
+
+      }
+
       @media only screen and (max-width: 600px){
 
         #courses{
