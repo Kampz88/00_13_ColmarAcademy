@@ -208,7 +208,11 @@
 
       header .mobile ul li{
         display: block;
-        padding-left: 5.33rem;
+        margin-left: 5.33rem;
+      }
+
+      header .mobile ul li:hover{
+        border-bottom: 3px solid var(--lightest);
       }
 
       header .mobile ul li:first-child{
@@ -238,7 +242,7 @@
       }
 
       header .mobile ul li{
-        padding-left: 0;
+        margin-left: 0;
       }
 
       header .mobile ul li:first-child{
@@ -303,6 +307,10 @@
         color: var(--highlight);
       }
 
+      #banner .right .logos i:active{
+        color: var(--dark);
+      }
+
       #banner .right h1{
         color: var(--highlight);
         margin-bottom: 2rem;
@@ -325,6 +333,11 @@
       }
 
       #banner .right .button:hover{
+        background-color: var(--highlight);
+        color: var(--medium);
+      }
+
+      #banner .right .button:active{
         background-color: var(--highlight);
         color: var(--dark);
       }
@@ -388,10 +401,6 @@
         #banner .right .button{
           margin-bottom: 2.67rem;
           width: 100%;
-        }
-
-        #banner .right .button{
-          margin-bottom: 2.67rem;
         }
 
       }
@@ -510,6 +519,10 @@
         color: var(--medium);
       }
 
+      #about .right .info-section:last-child .text a:active{
+        color: var(--highlight);
+      }
+
       @media only screen and (max-width: 768px) {
 
         #about .left{
@@ -591,6 +604,10 @@
           font-style: italic;
         }
 
+        #about .right .info-section:last-child .text a:active{
+          color: var(--medium);
+        }
+
       }
 
       /*Courses Section*/
@@ -625,11 +642,16 @@
         width: 25%;
         margin: 0 1rem 2rem 1rem;
         background-color: var(--lightest);
-        transition: background-color, 2s, ease-in-out, 0.5s;
+        transition: all, 2s, ease-in-out, 0.5s;
       }
 
       #courses .course-list .course-block:hover{
         background-color: var(--highlight);
+      }
+
+      #courses .course-list .course-block:active{
+        transform: scale(1.05);
+
       }
 
       #courses .course-list .course-block .image{
@@ -849,6 +871,10 @@
 
       #thesis .thesis-content .right .thesis-section:hover .text p{
         color: var(--lightest);
+      }
+
+      #thesis .thesis-content .right .thesis-section:active{
+        background-color: var(--dark);
       }
 
       #thesis .thesis-content .right .thesis-section .image{
