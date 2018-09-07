@@ -703,7 +703,7 @@
           width: 40%;
         }
 
-        #courses .course-list .course-block p{
+        #courses .course-list .course-block .text p{
           font-size: 1rem;
         }
 
@@ -762,7 +762,6 @@
         }
 
         #courses .course-list .course-block .text p{
-          font-size: 1rem;
           width: 65%;
           margin: 0;
           padding: 0;
