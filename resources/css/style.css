@@ -684,7 +684,6 @@
       }
 
       #courses .course-list .course-block .text p{
-        font-size: 1rem;
         margin-bottom: 0.5rem;
         color: var(--dark);
       }
